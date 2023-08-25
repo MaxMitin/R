@@ -22,8 +22,8 @@ public class HelloController extends Application
 
     public static void main(String args[])
     {
-            int disranceBetweenRings = (int) Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2));
-            String commonSpaceOfRings = (disranceBetweenRings <= radius1 + radius2 && disranceBetweenRings + radius1 >= radius2 && disranceBetweenRings + radius2 >= radius1) ? "Окружности пересакаются друг с другом." : "Окружности не пересекаются друг с другом.";
+            int distanceBetweenRings = (int) Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1 - y2), 2));
+            String commonSpaceOfRings = (distanceBetweenRings <= radius1 + radius2 && distanceBetweenRings + radius1 >= radius2 && distanceBetweenRings + radius2 >= radius1) ? "Окружности пересакаются друг с другом." : "Окружности не пересекаются друг с другом.";
             System.out.println(commonSpaceOfRings);
             launch(args);
     }
